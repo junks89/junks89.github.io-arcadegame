@@ -49,7 +49,7 @@ class Player {
             level++;
             updateLevel();
             allEnemies = [];
-            if (level <= 10) {
+            if (level < 10) {
                 for (let i = 1; i <= level; i++) {
                     let enemy = new Enemy(50 + (i * 20), Math.random() * 150 * (-Math.random()), Math.random() * 240);
                     allEnemies.push(enemy);
